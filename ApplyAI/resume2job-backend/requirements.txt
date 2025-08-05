@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+docling
+langchain
+llama-index
+openai
+firebase-admin
+scikit-learn
+python-dotenv
+PyMuPDF
+spacy 

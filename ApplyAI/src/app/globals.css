@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #000000 !important;
+  margin: 0;
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid #6246ea;
+  outline-offset: 2px;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Progress animation */
+@keyframes progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-progress {
+  width: 50%;
+  animation: progress 1.5s infinite linear;
+}
+
+/* Hero tag positioning */
+.hero-tag-0 {
+  top: 15%;
+  left: 65%;
+}
+
+.hero-tag-1 {
+  top: 38%;
+  right: 5%;
+}
+
+.hero-tag-2 {
+  bottom: 25%;
+  left: 18%;
+}
+
+.hero-tag-3 {
+  bottom: 8%;
+  right: 45%;
+}
+
+.hero-tag-0::before,
+.hero-tag-1::before,
+.hero-tag-2::before,
+.hero-tag-3::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  border-top: 2px dashed #ffd803;
+  filter: drop-shadow(0 0 2px #ffd803);
+  top: 50%;
+  left: -72px;
+}
+
+@layer utilities {
+  h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.card {
+  background: #121212;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 #00000033;
+  padding: 2rem;
+}
+
+section, main, header, footer, nav, div {
+  background: transparent !important;
+} 
