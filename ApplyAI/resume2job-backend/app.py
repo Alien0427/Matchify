@@ -35,7 +35,7 @@ db = init_firebase()
 ensure_collections_exist(db)
 ensure_messages_collection_exists(db)
 
-GEMINI_API_KEY = "AIzaSyBUsIp1TAu3oSkrRsPq5lD_8dafeUKjYrs"
+GEMINI_API_KEY = "REPLACE WITH YOU GEMINI API KEY"
 GEMINI_MODEL = "gemini-2.5-flash-lite-preview-06-17"
 GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent'  # For reference, not used directly by LangChain
 
