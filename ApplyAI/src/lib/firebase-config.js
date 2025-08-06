@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAzG-Mp85gJzBnQoAzxck774t9LB4EY18k",
-  authDomain: "applyai-3f11d.firebaseapp.com",
-  projectId: "applyai-3f11d",
-  storageBucket: "applyai-3f11d.firebasestorage.app",
-  messagingSenderId: "211627308491",
-  appId: "1:211627308491:web:02da3d2a95e8323b23324e",
-  measurementId: "G-7MV0MT3VD5"
+  apiKey: "replace with your api key",
+  authDomain: "replace with your project domain",
+  projectId: "replace with your projectID",
+  storageBucket: "replace with your storagebucket",
+  messagingSenderId: " ",
+  appId: " ",
+  measurementId: " "
 };
 
 const app = initializeApp(firebaseConfig);
